@@ -11,16 +11,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal[900],
+        backgroundColor: Colors.blue,
         appBar: AppBar(
-          title: Text('Dicee'),
-          backgroundColor: Colors.brown[900],
+          title: Text('Ask Me Anything'),
+          backgroundColor: Colors.blue[900],
         ),
-        body: DicePage(),
+        body: BallPage(),
       ),
     );
   }
 }
+
+class BallPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+/*
+
 
 class DicePage extends StatefulWidget {
   @override
@@ -64,7 +74,6 @@ class _DicePageState extends State<DicePage> {
 
 // }
 
-/*
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -178,5 +187,13 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+echo "# FlutterImageChanger" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/abhishekvarde/FlutterImageChanger.git
+git push -u origin main
 
 */
